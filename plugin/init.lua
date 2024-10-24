@@ -87,7 +87,7 @@ local sharp = {}
 
 local sharp_palette = {
     background = '#010102',
-    foreground = '#c0bdb7'
+    foreground = '#c0bdb7',
     overlay = '#302e28',
     overlay_lite = '#3c3a35',
     text = '#f1eee7',
