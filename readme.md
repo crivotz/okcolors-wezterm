@@ -1,8 +1,17 @@
+<p align="center">
+  <a href="https://github.com/rose-pine/rose-pine-theme">
+    <img src="https://github.com/e-q/okcolors.nvim/blob/main/.github/okcolors.png" />
+  </a>
+</p>
+<p align="center">
+    <h2 align="center">OkColors for WezTerm</h2>
+</p>
+
 ## Usage
 
 To install the theme using the built-in WezTerm plugin support, add these lines
 to your `wezterm.lua` file above the `return` block (available variants are
-`main`, `moon`, and `dawn`):
+`smooth`, and `sharp`):
 
 ```lua
 local wezterm = require('wezterm')
@@ -34,4 +43,6 @@ all custom colors defined in the lua configuration.
 
 ## Thanks to
 
+- [e-q](https://github.com/e-q)
+- [okcolors.nvim](https://github.com/e-q/okcolors.nvim)
 - [neapsix](https://github.com/neapsix)
