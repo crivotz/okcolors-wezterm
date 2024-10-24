@@ -90,8 +90,8 @@ local smooth_light_palette = {
     foreground = '#2e2d31',
     overlay = '#302e28',
     overlay_lite = '#3c3a35',
-    text = '#f1eee7',
-    text_lite = '#fefcf4',
+    text = '#2e2d31',
+    text_lite = '#2e2d31',
     red = '#cc2443',
     red_lite = '#ff9498',
     yellow = '#886e1f',
@@ -260,8 +260,8 @@ local sharp_light_palette = {
     foreground = '#010205',
     overlay = '#302e28',
     overlay_lite = '#3c3a35',
-    text = '#f1eee7',
-    text_lite = '#fefcf4',
+    text = '#010205',
+    text_lite = '#010205',
     red = '#d01a41',
     red_lite = '#fe989b',
     yellow = '#8b6e09',
@@ -297,7 +297,7 @@ function sharp_light.colors()
         selection_bg = sharp_light_palette.overlay,
         selection_fg = sharp_light_palette.text,
 
-        ansi = {
+        brights = {
             sharp_light_palette.overlay,
             sharp_light_palette.red,
             sharp_light_palette.green,
@@ -308,7 +308,7 @@ function sharp_light.colors()
             sharp_light_palette.text,
         },
 
-        brights = {
+        ansi = {
             sharp_light_palette.overlay_lite,
             sharp_light_palette.red_lite,
             sharp_light_palette.green_lite,
