@@ -11,7 +11,7 @@
 
 To install the theme using the built-in WezTerm plugin support, add these lines
 to your `wezterm.lua` file above the `return` block (available variants are
-`smooth`, and `sharp`):
+`smooth`, `smooth_light`, `sharp`, and `sharp_light`):
 
 ```lua
 local wezterm = require('wezterm')
