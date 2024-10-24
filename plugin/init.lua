@@ -172,7 +172,7 @@ local sharp = {}
 
 local sharp_palette = {
     background = '#010102',
-    foreground = '#e0ded8',
+    foreground = '#fefcf4',
     overlay = '#302e28',
     overlay_lite = '#3c3a35',
     text = '#f1eee7',
@@ -189,7 +189,7 @@ local sharp_palette = {
     blue_lite = '#5cc6fc',
     purple = '#9a21e8',
     purple_lite = '#cea1fd',
-    highlight_high = '#e0ded8',
+    highlight_high = '#fefcf4',
 }
 
 local sharp_active_tab = {
@@ -253,8 +253,94 @@ function sharp.window_frame() -- (Fancy tab bar only)
     }
 end
 
+local sharp_light = {}
+
+local sharp_light_palette = {
+    background = '#fefcf4',
+    foreground = '#010205',
+    overlay = '#302e28',
+    overlay_lite = '#3c3a35',
+    text = '#f1eee7',
+    text_lite = '#fefcf4',
+    red = '#d01a41',
+    red_lite = '#fe989b',
+    yellow = '#8b6e09',
+    yellow_lite = '#e0b316',
+    cyan = '#0c8285',
+    cyan_lite = '#19d2d7',
+    green = '#17865d',
+    green_lite = '#24d998',
+    blue = '#0a7caa',
+    blue_lite = '#5cc6fc',
+    purple = '#9a21e8',
+    purple_lite = '#cea1fd',
+    highlight_high = '#010205',
+}
+
+local sharp_light_active_tab = {
+    bg_color = sharp_light_palette.overlay,
+    fg_color = sharp_light_palette.text,
+}
+
+local sharp_light_inactive_tab = {
+    bg_color = sharp_light_palette.background,
+    fg_color = sharp_light_palette.overlay_lite,
+}
+
+function sharp_light.colors()
+    return {
+        foreground = sharp_light_palette.text,
+        background = sharp_light_palette.background,
+        cursor_bg = sharp_light_palette.highlight_high,
+        cursor_border = sharp_light_palette.highlight_high,
+        cursor_fg = sharp_light_palette.text,
+        selection_bg = sharp_light_palette.overlay,
+        selection_fg = sharp_light_palette.text,
+
+        ansi = {
+            sharp_light_palette.overlay,
+            sharp_light_palette.red,
+            sharp_light_palette.green,
+            sharp_light_palette.yellow,
+            sharp_light_palette.blue,
+            sharp_light_palette.purple,
+            sharp_light_palette.cyan,
+            sharp_light_palette.text,
+        },
+
+        brights = {
+            sharp_light_palette.overlay_lite,
+            sharp_light_palette.red_lite,
+            sharp_light_palette.green_lite,
+            sharp_light_palette.yellow_lite,
+            sharp_light_palette.blue_lite,
+            sharp_light_palette.purple_lite,
+            sharp_light_palette.cyan_lite,
+            sharp_light_palette.text_lite,
+        },
+
+        tab_bar = {
+            background = sharp_light_palette.background,
+            active_tab = sharp_light_active_tab,
+            inactive_tab = sharp_light_inactive_tab,
+            inactive_tab_hover = sharp_light_active_tab,
+            new_tab = sharp_light_inactive_tab,
+            new_tab_hover = sharp_light_active_tab,
+            inactive_tab_edge = sharp_light_palette.overlay_lite, -- (Fancy tab bar only)
+        },
+    }
+end
+
+function sharp_light.window_frame() -- (Fancy tab bar only)
+    return {
+        active_titlebar_bg = sharp_light_palette.background,
+        inactive_titlebar_bg = sharp_light_palette.background,
+    }
+end
+
 return {
     smooth = smooth,
     smooth_light = smooth_light,
     sharp = sharp,
+    sharp_light = sharp_light,
 }
