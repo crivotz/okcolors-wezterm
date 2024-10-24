@@ -41,7 +41,7 @@ return {
 Make sure `color_scheme` is not specified, because the color scheme overrides
 all custom colors defined in the lua configuration.
 
-## Thanks to
+## Credits to
 
 - [e-q](https://github.com/e-q)
 - [okcolors.nvim](https://github.com/e-q/okcolors.nvim)
