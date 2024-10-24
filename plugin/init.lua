@@ -2,7 +2,7 @@ local smooth = {}
 
 local smooth_palette = {
     background = '#16151A',
-    foreground = '#c0bdb7'
+    foreground = '#c0bdb7',
     overlay = '#302e28',
     overlay_lite = '#3c3a35',
     text = '#f1eee7',
