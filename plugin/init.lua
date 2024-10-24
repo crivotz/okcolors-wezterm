@@ -127,7 +127,7 @@ function smooth_light.colors()
         selection_bg = smooth_light_palette.overlay_lite,
         selection_fg = smooth_light_palette.background,
 
-        ansi = {
+        brights = {
             smooth_light_palette.overlay,
             smooth_light_palette.red,
             smooth_light_palette.green,
@@ -138,7 +138,7 @@ function smooth_light.colors()
             smooth_light_palette.text,
         },
 
-        brights = {
+        ansi = {
             smooth_light_palette.overlay_lite,
             smooth_light_palette.red_lite,
             smooth_light_palette.green_lite,
